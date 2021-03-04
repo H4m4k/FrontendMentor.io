@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -13,6 +17,53 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     color: hsl(229, 23%, 23%);
     
-    background-color: hsl(185, 75%, 39%);
-    
+    background-color: hsl(185, 75%, 39%);   
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.background_Svg {
+    position: absolute;
+    height: 135%;
+    z-index: -1;
+}
+
+img[src*='top'] {
+    top: -70%;
+    left: -20%;
+}
+
+img[src*='bottom'] {
+    right: -15%;
+    bottom: -80%;
+}
+
+.profile_Card {
+    background: white;
+    width: 25%;
+    height: 35%;
+}
+
+.profile_Card_bg {
+    background: white url(/images/bg-pattern-card.svg) no-repeat top;
+    background-size: 100% 50%;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+}
+
+p:first-of-type {
+    margin-top: 0;
+    border-top: 1px black;
+}
+
+.numbers {
+    height: 10%;
 }
