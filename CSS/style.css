@@ -175,6 +175,11 @@ div.profileC_bg > p:last-child {
 
     .profile_Card {
         width: 90%;
+        height: 40%;
+    }
+
+    .numbers {
+        height: 10%;
     }
 
 }
