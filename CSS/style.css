@@ -42,17 +42,9 @@ img[src*='bottom'] {
     bottom: -80%;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    place-content: center;
-}
-
-.card >img {
+img[src*='image-victor'] {
     border-radius: 50%;
     border: 6px solid white;
-    margin: 13% 0 5% 0;
 }
 
 .profile_Card {
@@ -61,9 +53,11 @@ img[src*='bottom'] {
     height: 30%;
 
     border-radius: 15px 15px 0 0;
+
+    position: relative;
 }
 
-.profile_Card_bg {
+.profileC_bg {
     background: white url(/images/bg-pattern-card.svg) no-repeat top;
     background-size: 100% 50%;
 }
@@ -87,6 +81,14 @@ p:first-of-type {
 
 p {
     margin: 0;
+}
+
+div.profileC_bg > p {
+    top:77%
+}
+
+div.profileC_bg > p:last-child {
+    top: 84%;
 }
 
 .bold {
@@ -125,15 +127,21 @@ p {
     border-radius: 0 0 15px 15px;
 }
 
-.add_Margin_Top {
+.absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.add_MarginTop {
     margin-top: 3%;
 }
 
-
-
-
-/* MOBILE */
-
+  /******************/
+ /*  M O B I L E   */
+/******************/
 
 
 
