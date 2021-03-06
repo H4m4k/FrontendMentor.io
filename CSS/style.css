@@ -34,7 +34,7 @@ body {
 
 img[src*='top'] {
     top: -70%;
-    left: -20%;
+    left: -15%;
 }
 
 img[src*='bottom'] {
@@ -127,4 +127,41 @@ p {
 
 .add_Margin_Top {
     margin-top: 3%;
+}
+
+
+
+
+/* MOBILE */
+
+
+
+
+
+@media screen and ( max-width: 375px ) {
+
+    body {
+        width: initial;
+    }
+
+    .background_Svg {
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+    }
+
+    img[src*='top'] {
+        top: -55%;
+        left: -150%;
+    }
+
+    img[src*='bottom'] {
+        right: -148%;
+        bottom: -48%;
+    }
+
+    .profile_Card {
+        width: 90%;
+    }
+
 }
